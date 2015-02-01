@@ -1,7 +1,7 @@
 application: mytestcustomtinywebdb
 version: 3
 runtime: python27
-threadsafe: no
+threadsafe: false
 api_version: 1
 
 handlers:
