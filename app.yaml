@@ -1,17 +1,24 @@
-application: tinywebdbg54ubi
-version: 2
-runtime: python
+application: mytestcustomtinywebdb
+version: 1
+runtime: python27
+threadsafe: no
 api_version: 1
 
 handlers:
-- url: /images
-  static_dir: images
-
+- url: /media/images
+  static_dir: /media/images
+  
 - url: /jsclient
   static_dir: jsclient
+
+- url: /robots.txt
+  static_files: media/text/robots.txt
+  upload: media/text/robots.txt
 
 - url: .*
   script: main.py
 
 
-
+libraries:
+- name: django
+  version: "1.2"

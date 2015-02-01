@@ -51,7 +51,7 @@ class MainPage(webapp.RequestHandler):
 IntroMessage = '''
 <table border=0>
 <tr valign="top">
-<td><image src="/images/customLogo.gif" width="200" hspace="10"></td>
+<td><image src="/media/images/customLogo.gif" width="200" hspace="10"></td>
 <td>
 <p>
 This web service is designed to work with <a
