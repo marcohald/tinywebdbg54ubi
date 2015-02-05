@@ -22,12 +22,12 @@ from django.utils import simplejson as json
 class StoredData(db.Model):
   user = db.StringProperty()
   tag = db.StringProperty()
-  value = db.StringProperty(multiline=True)
+  ## value = db.StringProperty(multiline=True)
   ## defining value as a string property limits individual values to 500
   ## characters.   To remove this limit, define value to be a text
   ## property instead, by commnenting out the previous line
   ## and replacing it by this one:
-  ## value db.TextProperty()
+  value db.TextProperty()
   date = db.DateTimeProperty(required=True, auto_now=True)
 
 
